@@ -30,15 +30,21 @@
 li{
     display: inline;
     font-weight: 800;
-    font-size: 30px;
+    font-size: 25px;
     margin-inline: 20px;
     text-decoration: none;
+    color: red;
+    transition: 0.2s;
 }
 
-
+li:hover
+{
+    bottom: 0px;
+    border-bottom: 3px solid red;
+}
 #menu1{
     display: flex;
-    /* border: 2px solid red; */
+    color: red;
     text-decoration: none;
     justify-content: space-evenly;
 }
