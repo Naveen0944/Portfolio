@@ -1,3 +1,8 @@
+.wholediv{
+    background-color: rgb(7, 6, 6);
+}
+
+
 .navbar{
     display: flex;
     justify-content: space-between;
@@ -31,26 +36,25 @@ li{
     display: inline;
     font-weight: 800;
     font-size: 25px;
-    margin-inline: 20px;
-    text-decoration: none;
-    color: red;
+}
+
+.text{
+    color: aqua;
     transition: 0.2s;
 }
 
-li:hover
+.text:hover
 {
     bottom: 0px;
-    border-bottom: 3px solid red;
+    color: red;
+    border-bottom: 3px solid aqua;
+    
 }
 #menu1{
     display: flex;
     color: red;
     text-decoration: none;
     justify-content: space-evenly;
-}
-.icon{
-    /* border: 2px solid red; */
-    padding: 2px;
 }
 
    
@@ -61,21 +65,21 @@ li:hover
     margin: 10px;
     font-size: 25px;
     font-weight: 800;
-    color: black;
+    color:aqua;
     text-shadow: 5px 5px 6px  rgb(169, 106, 227);
     transition: 1ms;
 }
 .a1:hover{
-    border-bottom: 3px solid rgb(55, 163, 214);
+    border-bottom: 3px solid aqua;
 }
 .a2:hover{
-    border-bottom: 3px solid rgb(55, 163, 214);
+    border-bottom: 3px solid aqua);
 }
 .a3:hover{
-    border-bottom: 3px solid rgb(55, 163, 214);
+    border-bottom: 3px solid aqua;
 }
 
-#icon{
+#topicon{
     position: absolute;
     height: 180px;
     width: 120px;
@@ -95,7 +99,7 @@ li:hover
 100%{
    
    
-   filter: drop-shadow(30px 30px 20px rgb(27, 26, 26));
+   filter: drop-shadow(30px 30px 20px rgb(202, 199, 199));
 }
 
 }
@@ -106,7 +110,7 @@ li:hover
     box-shadow: 5px 5px 5px  rgb(169, 106, 227);
     top: 25px;
    
-    color: black;
+    color: rgb(149, 141, 141);
     
     transition: .2s; 
 }
@@ -124,7 +128,7 @@ li:hover
 
 .h{
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     z-index: 3;
 }
 
@@ -133,6 +137,7 @@ li:hover
     animation-name: h;
     animation-duration: 2s;
     animation-iteration-count: 1;
+    color: aqua;
  
 }
 
@@ -144,7 +149,7 @@ li:hover
 }
 
 #image{
-    filter: drop-shadow(30px 30px 10px black);
+    filter: drop-shadow(30px 30px 10px rgb(176, 165, 165));
     height: 500px;
     animation-name: image;
     animation-duration: 2s;
@@ -190,9 +195,17 @@ li:hover
     flex-direction: column;
     position: relative;
     top: 42px;
-    left: -200px; 
+    left: -68px; 
+    animation-name: sicoh;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
 }
-
+@keyframes sicoh {
+    0%{
+        transform: translateX(-600px);
+    }
+    
+}
 
 
 #sicon{
@@ -248,7 +261,7 @@ li:hover
 
 .details h1,h3{
     color: red;
-    text-shadow: 2px 2px 3px black;
+    text-shadow: 2px 2px 3px rgb(152, 148, 148);
 }
 
 @keyframes det {
@@ -272,7 +285,7 @@ li:hover
    padding: 20px;
     text-align: center;
     font-weight: 700;
-    color: rgb(6, 6, 6);
+    color: aqua;
     } 
 
 .b{
@@ -381,35 +394,47 @@ li:hover
 {
     gap: 50px;
     word-spacing: 20px;
+    color:rgb(104, 41, 172);
+    text-shadow: 5px 2px 5px rgb(184, 29, 198);
 }
 
-
+.sch{
+    color: aqua;
+}
 
 /* .Message */
 
+.messa{
+    border: 2px solid rgb(104, 41, 172);
+    width: 750px;
+    color: aqua;
+    border-radius: 40px;
+}
 
-table {
+.login{
+  padding: 10px;
+  backdrop-filter: blur(20px);
     
+}
+
+.login1{
+    height: 30px;
     width: 500px;
+    border-bottom: 2px;
+    border-radius: 20px;
 }
 
-input{
-    height: 20px;
-    width: 300px;
+.button{
+    height: 50px;
+    width: 400px;
+    border-radius: 40px;
 }
 
-textarea{
-    
-    width: 300px;
-}
-
-video{
+/* video{
     position: absolute;
     background: fixed;
     height: 100%;
     width: 1200px;
-    
     z-index: -1;
-
-}
+} */
 
